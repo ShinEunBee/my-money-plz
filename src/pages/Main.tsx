@@ -1,25 +1,12 @@
 import React from "react";
-import { useFormInput } from "../hooks/useFormInput";
-
+import '../styles/global-styles.css';
 export default function Main() {
-  const firstNameProps = useFormInput("음북");
-  const lastNameProps = useFormInput("신");
 
   return (
     <>
-      <label>
-        First name:
-        <input {...firstNameProps} />
-      </label>
-      <label>
-        Last name:
-        <input {...lastNameProps} />
-      </label>
-      <p>
-        <b>
-          Good morning, {firstNameProps.value} {lastNameProps.value}.
-        </b>
-      </p>
+      하하하하
+      <p>안녕 안녕</p>
+      <span>하이하이</span>
     </>
   );
 }
