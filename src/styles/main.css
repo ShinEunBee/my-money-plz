@@ -1,0 +1,27 @@
+@layer style_2, style_1;
+
+@layer style_1 {
+  .main-box {
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border-radius: 13px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+@layer style_2 {
+  .main-box {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(137, 41, 41);
+    border-radius: 13px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}

@@ -1,12 +1,22 @@
 import React from "react";
-import '../styles/global-styles.css';
+import "../styles/global-styles.css";
+import "../styles/main.css";
+
 export default function Main() {
 
+  function printName<T> (name: T){
+    console.log(name);
+  }
+
+  printName<string>('ㅎㅎ');
+  printName<number>(90);
   return (
     <>
-      하하하하
-      <p>안녕 안녕</p>
-      <span>하이하이</span>
+      <div className="main-box">
+        <span>제목</span>
+        <hr />
+        <p>내용</p>
+      </div>
     </>
   );
 }
