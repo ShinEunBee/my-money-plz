@@ -3,22 +3,49 @@ import "../styles/global-styles.css";
 import "../styles/main.css";
 
 export default function Main() {
-  function display<T>(data:T[]): void{
-    console.log(data.length);
-    for(const elem of data){
-      console.log(elem);
+  interface listRaw {
+    title: string;
+    partner: string;
+    price: number;
+    today(): number;
+  }
+
+  class listOne implements listRaw {
+    title: string;
+    partner: string;
+    price: number;
+
+    constructor(title: string, partner: string, price: number) {
+      this.title = title;
+      this.partner = partner;
+      this.price = price;
+    }
+
+    today(): number {
+      return 2024;
     }
   }
 
-  display<number>([0,1,2,3]);
-  display<string>(["hi","bye"]);
+  // let firstList: listRaw = { title: "title1", partner: "Ken", price: 300000 };
+  let firstList = new listOne("title", "prtner", 300000);
+
+  function justPrint<T>(element:T) : void{
+    console.log(element);
+  }
+
+  justPrint<number>(20);
+  justPrint<string>("hi");
 
   return (
     <>
       <div className="main-box">
-        <span>제목</span>
+        <span>내 돈 내놔</span>
         <hr />
-        <p>내용</p>
+        <div>
+          <p>{firstList.title}</p>
+          <p>{firstList.partner}</p>
+          <span>{firstList.price}</span>
+        </div>
       </div>
     </>
   );
