@@ -3,13 +3,16 @@ import "../styles/global-styles.css";
 import "../styles/main.css";
 
 export default function Main() {
-
-  function printName<T> (name: T){
-    console.log(name);
+  function display<T>(data:T[]): void{
+    console.log(data.length);
+    for(const elem of data){
+      console.log(elem);
+    }
   }
 
-  printName<string>('ㅎㅎ');
-  printName<number>(90);
+  display<number>([0,1,2,3]);
+  display<string>(["hi","bye"]);
+
   return (
     <>
       <div className="main-box">
