@@ -6,7 +6,7 @@ export default function CreateView() {
   const yourName = useFormInput("");
 
   return (
-    <>
+    <div className="main-box">
       <h1>저는 입력 화면 입니다.</h1>
       <input type="text" {...myName} />
       <br />
@@ -15,6 +15,6 @@ export default function CreateView() {
       <h4>
         {myName.value} 와 {yourName.value}
       </h4>
-    </>
+    </div>
   );
 }

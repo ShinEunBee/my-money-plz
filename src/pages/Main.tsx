@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/global-styles.css";
 import "../styles/main.css";
+import { Link } from "react-router-dom";
 
 export default function Main() {
   interface listRaw {
@@ -29,7 +30,7 @@ export default function Main() {
   // let firstList: listRaw = { title: "title1", partner: "Ken", price: 300000 };
   let firstList = new listOne("title", "prtner", 300000);
 
-  function justPrint<T>(element:T) : void{
+  function justPrint<T>(element: T): void {
     console.log(element);
   }
 
@@ -46,6 +47,11 @@ export default function Main() {
           <p>{firstList.partner}</p>
           <span>{firstList.price}</span>
         </div>
+
+        <button>
+          <Link to="/create">등록</Link>
+        </button>
+        
       </div>
     </>
   );
