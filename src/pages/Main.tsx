@@ -48,10 +48,10 @@ export default function Main() {
           <span>{firstList.price}</span>
         </div>
 
-        <button>
-          <Link to="/create">등록</Link>
+        <button className="create-button">
+          <Link to="/create" className="link-text">등록</Link>
         </button>
-        
+
       </div>
     </>
   );
