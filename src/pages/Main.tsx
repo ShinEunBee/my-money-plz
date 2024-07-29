@@ -40,22 +40,19 @@ export default function Main() {
 
   return (
     <>
-      {/* <div> */}
-        {/* <span>내 돈 내놔</span>
+      <div>
+        <span>내 돈 내놔</span>
         <hr />
-        <div>
-          나는야 블록 레벨
-        </div>
-        <span>나는야 인라인</span>
-        <div>
-          <ListBox title="제목" partner="김도비"/>
+        <div >
+          <ListBox title="제목1" partner="김일비"/>
+          <ListBox title="제목2" partner="김둘비"/>
+          <ListBox title="제목3" partner="김셋비"/>
         </div>
 
         <button>
           <Link to="/create">등록</Link>
-        </button> */}
-      {/* </div> */}
-      <div>ㅇㅛㅅㅗㅇㅡㅣ ㅋㅓㄴㅌㅔㄴㅊㅡ</div>
+        </button>
+      </div>
     </>
   );
 }

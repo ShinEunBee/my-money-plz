@@ -1,6 +1,10 @@
-div {
-  box-sizing: border-box;
-  width: 500px;
-  height: 500px;
-  border: 1px solid red;
+.list-box {
+  padding: 10px;
+  background:white;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+p {
+  display: inline;
 }

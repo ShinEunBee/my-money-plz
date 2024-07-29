@@ -9,7 +9,7 @@ interface listRaw {
 const ListBox: React.FC<listRaw> = (listRaw) => {
   return (
     <>
-      <div>
+      <div className="list-box">
         <span>{listRaw.title}</span>
         <p>{listRaw.partner}</p>
       </div>
