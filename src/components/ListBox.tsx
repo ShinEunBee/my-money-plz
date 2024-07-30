@@ -11,6 +11,7 @@ const ListBox: React.FC<listRaw> = (listRaw) => {
     <>
       <div className="list-box">
         <span>{listRaw.title}</span>
+        <hr />
         <p>{listRaw.partner}</p>
       </div>
     </>
