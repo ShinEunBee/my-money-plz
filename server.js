@@ -4,7 +4,7 @@ const app = express();
 const server = require("http").createServer(app);
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://<un>:<pw>@cluster0.lcuhmx9.mongodb.net/')
+mongoose.connect('mongodb+srv://user:firsttestdb@cluster0.lcuhmx9.mongodb.net/')
 .then(()=>console.log('MongoDB 가 연결'))
 .catch(()=>console.log('failed')) 
 
