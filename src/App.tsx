@@ -6,7 +6,9 @@ import Router from './pages/Router';
 const App: React.FC = () => {
 
   useEffect(()=> {
-    fetch("http://localhost:8080/api")
+    fetch("http://localhost:8080/prices/add", {
+      method: "POST"
+    })
     .then(res=>res.json())
     .then(data=>console.log(data))
   });
